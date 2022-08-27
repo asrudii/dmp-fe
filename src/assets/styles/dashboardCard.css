@@ -1,0 +1,36 @@
+.dashboard-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  background: #ffffff;
+  box-shadow: 5px 7px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 0 40px;
+}
+
+.right-card-wrap span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #bc1414;
+}
+
+.left-card-wrap {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.left-card-wrap img {
+  width: 130px;
+}
+
+.left-card-wrap div {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-card-wrap > div > span:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+}

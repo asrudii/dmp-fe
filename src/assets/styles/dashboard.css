@@ -1,0 +1,27 @@
+.title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  background-color: #f8f8f8;
+  height: 58px;
+}
+
+.title-wrap h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.title-wrap div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px;
+}

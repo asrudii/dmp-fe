@@ -1,0 +1,19 @@
+.button-outline {
+  background: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  padding: 0 20px;
+  gap: 12px;
+  border: 1px solid #bc1414;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #bc1414;
+}
+
+.button-outline:hover {
+  cursor: pointer;
+}

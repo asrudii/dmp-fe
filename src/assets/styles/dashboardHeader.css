@@ -1,0 +1,42 @@
+.dashboard-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+  height: 191px;
+  background: linear-gradient(91.75deg, #c94b4b 14.92%, #b72222 75.34%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dashboard-header .shape-header {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -20px;
+}
+
+.dashboard-header .il-header {
+  position: relative;
+  margin-right: 52px;
+  z-index: 1;
+}
+
+.dashboard-header-content {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.dashboard-header-content .title-header {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.dashboard-header-content .search-header {
+  margin-top: 30px;
+  width: 560px;
+  border-radius: 4px;
+}
