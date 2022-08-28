@@ -1,0 +1,65 @@
+.statistic-card {
+  height: 348px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.statistic-card .statistic-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.statistic-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.statistic-group {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.statistic-group span {
+  font-size: 14px;
+}
+
+.statistic-circle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statistic-circle > div:nth-child(1),
+.statistic-circle > div:nth-last-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badge {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.statistic-circle .percent-circle {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.topic {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.topic-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

@@ -1,11 +1,12 @@
 import {
-  UserOutlined,
-  LineChartOutlined,
   HomeOutlined,
-  SearchOutlined,
-  BellOutlined,
+  LineChartOutlined,
+  PullRequestOutlined,
+  MenuOutlined,
+  SettingOutlined,
+  CloseOutlined,
 } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, Avatar } from 'antd';
+import { Layout, Menu } from 'antd';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.svg';
@@ -14,7 +15,7 @@ import '../../assets/styles/template.css';
 export default function Template({ children, defaultSelectedKeys }) {
   const [collapsed, setCollapsed] = useState(true);
 
-  const { Header, Content, Footer, Sider } = Layout;
+  const { Content, Sider } = Layout;
 
   const menuSidebar = [
     getItem(
@@ -28,9 +29,9 @@ export default function Template({ children, defaultSelectedKeys }) {
       <LineChartOutlined style={{ fontSize: '20px' }} />
     ),
     getItem(
-      <Link to="/user">User Management</Link>,
+      <Link to="/product/promo">Product Comparisons</Link>,
       '3',
-      <UserOutlined style={{ fontSize: '20px' }} />
+      <PullRequestOutlined style={{ fontSize: '20px' }} />
     ),
   ];
 
@@ -63,27 +64,44 @@ export default function Template({ children, defaultSelectedKeys }) {
           mode="inline"
           items={menuSidebar}
         />
+        <div className={`bottom-menu ${collapsed ? 'menu-collapsed' : null}`}>
+          {collapsed ? (
+            <>
+              <MenuOutlined
+                style={{ fontSize: '20px' }}
+                onClick={() => setCollapsed(false)}
+              />
+              <SettingOutlined style={{ fontSize: '20px' }} />
+              <img
+                src="https://miro.medium.com/max/1080/0*qlXcicyCge0iJe-q.jpg"
+                alt="user"
+                className="img-user"
+              />
+            </>
+          ) : (
+            <>
+              <button className="group-menu" onClick={() => setCollapsed(true)}>
+                <CloseOutlined style={{ fontSize: '20px' }} />
+                <span>Collapse Sidebar</span>
+              </button>
+              <button className="group-menu">
+                <SettingOutlined style={{ fontSize: '20px' }} />
+                <span>Settings</span>
+              </button>
+              <button className="group-menu">
+                <img
+                  src="https://miro.medium.com/max/1080/0*qlXcicyCge0iJe-q.jpg"
+                  alt="user"
+                  className="img-user"
+                />
+                <span>Jane Cooper</span>
+              </button>
+            </>
+          )}
+        </div>
       </Sider>
 
       <Layout>
-        {/* Navbar Top */}
-        {/* <Header className="header">
-          <Breadcrumb separator=">">
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          </Breadcrumb>
-          <div className="nav-topright">
-            <div>
-              <SearchOutlined className="icon-btn" />
-              <BellOutlined className="icon-btn" />
-            </div>
-            <div className="nav-btn">
-              <Avatar src="https://joeschmoe.io/api/v1/random" />
-              <span>John Doe</span>
-            </div>
-          </div>
-        </Header> */}
-
         <Content className="content">{children}</Content>
       </Layout>
     </Layout>

@@ -1,0 +1,32 @@
+.analysis-category {
+  margin-top: 27px;
+}
+
+.analysis-category .btn-category {
+  display: flex;
+  margin-top: 23px;
+  background-color: #fcefef;
+  border: 1px solid #bc1414;
+  border-radius: 12px;
+  height: 36px;
+  width: fit-content;
+}
+
+.analysis-category .btn-category button {
+  background: none;
+  border-radius: 12px;
+  font-size: 16px;
+  border: none;
+  padding: 0 20px;
+  min-width: 110px;
+}
+
+.analysis-category .btn-category button:hover {
+  cursor: pointer;
+}
+
+.analysis-category .btn-category .active {
+  background-color: #bc1414;
+  color: #ffffff;
+  font-weight: 600;
+}

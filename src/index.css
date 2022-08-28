@@ -13,3 +13,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-primary {
+  padding: 30px 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title-wrap h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-title-wrap span {
+  font-size: 14px;
+  color: #828282;
+}
+
+.nav-topright {
+  margin-right: 65px;
+  display: flex;
+  align-items: center;
+  color: black;
+  gap: 16px;
+}

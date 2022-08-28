@@ -1,0 +1,100 @@
+.analysis h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.analysis .total {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.analysis .decrease {
+  color: #eb5757;
+  display: flex;
+  align-items: center;
+}
+
+.analysis .increase {
+  color: #219653;
+  display: flex;
+  align-items: center;
+}
+
+.analysis .data-percent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis .data-percent span {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.detail-analysis {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  height: 127px;
+  background-color: #fffafa;
+  border: 1px dashed #bc1414;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.detail-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.detail-first {
+  display: flex;
+  gap: 36px;
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.detail-group span {
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.devider {
+  background-color: #bc1414;
+  height: 80px;
+  width: 1px;
+  margin: 0 24px;
+}
+
+.data-analysis {
+  margin-top: 38px;
+}
+
+.data-analysis-wrap {
+  margin: 25px 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.data-analysis-filter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.data-analysis-filter .data-filter-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.averange {
+  display: flex;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  gap: 16px;
+}

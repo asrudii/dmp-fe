@@ -1,0 +1,15 @@
+.card-analysis {
+  display: flex;
+  flex-direction: column;
+  width: 195px;
+  height: 130px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-analysis span:nth-child(1) {
+  font-size: 14px;
+  color: #828282;
+}
+
